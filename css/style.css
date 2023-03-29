@@ -1,7 +1,32 @@
+/* Small (smaller than 640px)
+Medium (641px to 1007px)
+Large (1008px and larger) */
+
 * {
   box-sizing: border-box;
 }
 
 body {
   background: #00ffb7;
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+header {
+  height: 280px;
+  padding: 0 35px;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-bottom: 30px;
+  line-height: 65px;
+}
+
+header > p {
+  margin: 0;
+}
+
+#header-img {
+  width: 100%;
 }
