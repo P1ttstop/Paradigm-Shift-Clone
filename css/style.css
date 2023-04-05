@@ -7,7 +7,7 @@ Large (1008px and larger) */
 }
 
 body {
-  background: #00ffb7;
+  background: #49fcd4;
   margin: 0;
   font-family: "Source Sans Pro", sans-serif;
   width: 100%;
@@ -17,7 +17,7 @@ body {
 header {
   height: 280px;
   padding: 0 35px;
-  margin-bottom: 100px;
+  margin-bottom: 80px;
 }
 
 h1 {
@@ -43,6 +43,10 @@ header > p {
   flex-direction: column;
 }
 
+.section-wrapper:first-of-type {
+  height: 900px;
+}
+
 #header-img {
   width: 150%;
 }
@@ -50,6 +54,7 @@ header > p {
 .section-content-wrapper {
   background: #fff;
   width: 100%;
+  padding: 0 20px;
 }
 
 .content-wrapper {
@@ -59,12 +64,14 @@ header > p {
 
 .content-wrapper > p {
   padding-top: 40px;
-  line-height: 40px;
+  line-height: 30px;
   font-weight: 300;
+  font-size: 1rem;
 }
 
 .img-wrapper {
   width: 100%;
+  margin-top: 40px;
   margin-bottom: 50px;
 }
 
@@ -75,7 +82,7 @@ header > p {
 .heading-wrapper {
   width: 300px;
   margin: 0 auto;
-  padding: 0 0 30px 0;
+  padding: 25px 0;
 }
 
 h2 {
@@ -83,6 +90,100 @@ h2 {
   text-transform: uppercase;
 }
 
-.list-wrapper ul li {
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.list-container ul li {
   list-style-type: none;
+  font-weight: 300;
+}
+
+.list-wrapper {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.icon-wrapper {
+  display: flex;
+  background-color: #f1f1f1;
+  width: 40px;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+i {
+  margin: 0 auto;
+}
+
+.image-container {
+  display: grid;
+  grid-template:
+    "a a"
+    "b c"
+    "d d";
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+#opp {
+  display: grid;
+  grid-template:
+    "e f"
+    "g g";
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.a {
+  grid-area: a;
+}
+
+.b {
+  grid-area: b;
+}
+
+.c {
+  grid-area: c;
+}
+
+.d {
+  grid-area: d;
+}
+
+.e {
+  grid-area: e;
+}
+
+.f {
+  grid-area: f;
+}
+
+.g {
+  grid-area: g;
+}
+
+.image-container img {
+  width: 100%;
+  height: 176px;
+}
+
+h4 {
+  color: #000000;
+  font-family: "Raleway", Helvetica, sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.175em;
+  line-height: 1.75;
+  margin: 40px 0 1.5rem 0;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.paragraph-edit > p {
+  padding-top: 0;
+  margin-top: 0;
+  margin-bottom: 40px;
 }
